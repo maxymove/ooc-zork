@@ -1,0 +1,45 @@
+Zork is one of the earliest interactive fiction computer games, with roots drawn from the original genre game, Colossal Cave Adventure. You can find more information about Zork on the Internet. In this assignment, you will be implement a much simpler version of the game.
+
+Learning Objectives:
+
+Apply SOLID design principles
+Apply design patterns when building an application
+Learn incremental application development
+Learn how to use git and online repository service
+Game specifications:
+
+Game is command line based Java application.
+This is a single player game.
+Once the game is started, player will be interacting with the game through command line.
+Player will be asked to choose the game map when start the game or choose to load the game from saved point.
+Game map is a simple 2 dimensional grid of rooms. Rooms are connected by doors. Adjacent rooms do not need to be connected. It is entirely up to your map design but plain simple connectivity is not acceptable, e.g. 2D grid where all rooms are connected to their adjacent room.
+Game map is loaded from file.
+Room may contain weapon , item or monster.
+Player will start from the starting room.
+Game must support the following commands:
+info – print out information of the player and the room that the player is currently in, this command only available while playing game. These are:
+Player stats, e.g. HP/HP Max, attack power, etc.
+Room information, e.g. Monster stats (if any), item stats (if any), doors, etc.
+take – take command is used to pick up the item in the current room, this command only available while playing game.
+drop – drop item of choice that the player currently carries, this command only available while playing game.
+attack with – is used to attack a monster in the current room, this command only available while playing game.
+go {direction} – move player to the room as specified by the direction, e.g. north, east, west, south, this command only available while playing game
+map – print 2D map using ascii art, this command only available while playing game
+autopilot {file} – run this game in autopilot mode using the list of command in the file, this command only available while playing game
+help – print all commands
+quit – end the current game and return to command prompt to let user choose the map or load from saved point again.
+play {map-name} – play new game, this command only available at when start the game.
+load {saved-point-name} – load game state from saved point, this command only available at when start the game.
+save {saved-point-name} – load game state from saved point, this command only available while playing game.
+exit – exit whole game, this command only available at when start the game.
+add any commands that will make game enjoyable.
+As palyer moves from room to room, HP will increase by a fix amount but no more than maximum HP.
+Player attack power will increase if he/she can defeat a monster.
+Monster will not initiate an attack on a player. Monster will only retaliate if the player attack. Player hit point (HP) will decrease based on probability. You can design your attacking strategy to make the game fun and playable.
+Player will win the game according to your game objective, for example, player must kill every monster in the map.
+When player win, return to command prompt to let user choose the map again.
+Game state can be saved to file and loaded at the beginning of game.
+Submission tasks:
+You will use Git as revision control for this homework. Your code changes should be commited and pushed to Online git repository, preferably gitlab.com. A repository containing a single commit or too few commits will not be graded. One of the purpose of this homework is to help you learn how to use git.
+
+When you demo the game. you will demonstrate the game play using autopilot mode so you need to provide about 10 scenarios and 2 maps. Loaing and saving game can be shown separately.

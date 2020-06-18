@@ -9,7 +9,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         String cmd = "";
         while (true) {
-            System.out.println(">>>");
+            System.out.println(">");
             cmd = scanner.nextLine();
             String words[] = cmd.split(" ");
             Command command = CommandFactory.getCommand(words[0]);

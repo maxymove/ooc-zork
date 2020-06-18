@@ -1,4 +1,4 @@
-package command;
+package command.action;
 
 public class DropCommand {
 }

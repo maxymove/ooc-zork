@@ -26,7 +26,7 @@ public class MapUtils {
         Room[][] rooms = new Room[row][col];
         for (int i = 0; i < row; i++) {
             for (int j = 0; j < col; j++) {
-                rooms[i][j] = new Room(getDoor(lines.get(j+2).charAt(j)));
+                rooms[i][j] = new Room(getDoor(lines.get(i+2).charAt(j)));
             }
         }
         map.setRooms(rooms);

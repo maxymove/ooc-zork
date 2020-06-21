@@ -1,14 +1,13 @@
-package Monster;
+package monster;
 
 public abstract class Monster {
     /*
-     * Monster should have HP, HPMax, attack power, location(row, col),
+     * Monster should have HP, HPMax, attack power
      */
 
     private String type;
     private int hp;
     private int atkPower;
-    private int row, col;
     private boolean alive = true;
 
     public String getType() {
@@ -33,22 +32,6 @@ public abstract class Monster {
 
     public void setAtkPower(int atkPower) {
         this.atkPower = atkPower;
-    }
-
-    public int getRow() {
-        return row;
-    }
-
-    public void setRow(int row) {
-        this.row = row;
-    }
-
-    public int getCol() {
-        return col;
-    }
-
-    public void setCol(int col) {
-        this.col = col;
     }
 
     public boolean isAlive() {

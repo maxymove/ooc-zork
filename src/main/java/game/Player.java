@@ -7,11 +7,11 @@ public class Player {
 
     // Array of items vs Map of items ???
     // use Coordinate or Location Class instead of row and col ???
-    // Both Player and Monster share same attributes, make an interface ???
+    // Both Player and Monster share same attributes, make an interface/abstract class ???
 
     private final int hpMax = 100;
     private int hp = 100;
-    private int atkPower;
+    private int atkPower = 10;
     private int row, col;
 
     public int getHp() {

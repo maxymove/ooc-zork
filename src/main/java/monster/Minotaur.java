@@ -1,4 +1,4 @@
-package Monster;
+package monster;
 
 public class Minotaur extends Monster {
 

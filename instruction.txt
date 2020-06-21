@@ -19,7 +19,7 @@ Player will start from the starting room.
 Game must support the following commands:
 info – print out information of the player and the room that the player is currently in, this command only available while playing game. These are:
 Player stats, e.g. HP/HP Max, attack power, etc.
-Room information, e.g. Monster stats (if any), item stats (if any), doors, etc.
+Room information, e.g. monster stats (if any), item stats (if any), doors, etc.
 take – take command is used to pick up the item in the current room, this command only available while playing game.
 drop – drop item of choice that the player currently carries, this command only available while playing game.
 attack with – is used to attack a monster in the current room, this command only available while playing game.
@@ -35,7 +35,7 @@ exit – exit whole game, this command only available at when start the game.
 add any commands that will make game enjoyable.
 As palyer moves from room to room, HP will increase by a fix amount but no more than maximum HP.
 Player attack power will increase if he/she can defeat a monster.
-Monster will not initiate an attack on a player. Monster will only retaliate if the player attack. Player hit point (HP) will decrease based on probability. You can design your attacking strategy to make the game fun and playable.
+monster will not initiate an attack on a player. monster will only retaliate if the player attack. Player hit point (HP) will decrease based on probability. You can design your attacking strategy to make the game fun and playable.
 Player will win the game according to your game objective, for example, player must kill every monster in the map.
 When player win, return to command prompt to let user choose the map again.
 Game state can be saved to file and loaded at the beginning of game.
